@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>SpaceWalkers</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><h1>SpaceWalkers</h1></div>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#">About Us</a></li>
+          <li class="nav-item"><a href="#">Blog</a></li>
+          <li class="nav-item"><a href="#Contact">Contact</a></li>
+          <li class="nav-item"><a href="#SignIn">Sign In</a></li>
+        </ul>
+      </nav>
+    
+    <div class="container home">
+    
+        <header class="intro">
+            <div class="earth"><img src="img/main-header.png" alt="picture of Earth Atmosphere from High Altitude"></div>
+        </header>
+
+        <section id="Contact"> <!-- contact form -->
+            <div class="contact-form">
+                <h4>Contact Me:</h4>
+                <p>If you have any questions about the above excursions - let me know.</p>
+                <form action="action_page.php">
+      
+                <label for="fname"></label>
+                <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+      
+                <label for="lname"></label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Your email address..">
+
+                <label for="excursion"></label>
+                <select id="excursion" name="excursion">
+                    <option value="pick">pick your excursion...</option>
+                    <option value="sun">Fun in the Sun</option>
+                    <option value="mountain">Mountain Excursion</option>
+                    <option value="island">Island Getaway</option>
+                </select>
+      
+                <label for="subject"></label>
+                <textarea id="subject" name="subject" placeholder="What questions do you have..." style="height:200px"></textarea>
+      
+                <input type="submit" value="Submit Your Question">
+      
+                </form>
+            </div>
+        </section>
+        <footer>
+            <p>Copyright SpaceWalkers 2018</p>
+        </footer>
+    </div>
+</body>
+</html>
