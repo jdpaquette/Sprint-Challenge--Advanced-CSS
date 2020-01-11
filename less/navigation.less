@@ -1,1 +1,27 @@
 // Navigation code here
+.navbar {
+    .box-size(10vh, 100%);
+    .flex-layout(space-between, center);
+    flex-direction: column;
+    margin: 2% 2% 0 2%;
+    background-color: @nav-bg;
+    border: @nav-border;
+    .logo {
+        width: 100%;
+        margin: 0 5%;
+        text-align: center;
+    }
+    .nav-links {
+        width: 80%;
+        .flex-layout(space-between, center);
+        flex-direction: row;
+        margin: auto;
+
+
+        a {
+            text-decoration: none;
+            color: @nav-font;
+            font-size: 1.75rem;
+        }
+    }
+}

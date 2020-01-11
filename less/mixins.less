@@ -1,1 +1,25 @@
 // Mixins Here
+.flex-layout(@j, @a) {
+    display: flex;
+    justify-content: @j;
+    align-items: @a;
+}
+.box-size(@h, @w) {
+    height: @h;
+    width: @w;
+}
+.layout (@wd, @mg) {
+    width: @wd;
+    margin: @mg;
+}
+.btn-setup(@bg, @c, @h, @w, @fs) {
+    color: @c;
+    height: @h;
+    width: @w;
+    background-color: @bg;
+    font-size: @fs;
+    line-height: @h;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
