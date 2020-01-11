@@ -1,0 +1,45 @@
+.container-home {
+    .flex-layout(center, center);
+}
+
+#Contact {
+    .layout(100%, auto);
+    text-align: center;
+
+    h3 {
+      padding: 1% 0;
+      font-size: 1.75rem;
+      text-align: center;
+    }
+    p {
+      padding-bottom: 2%;
+      text-align: center;
+    }
+    /* Style inputs with type="text", select elements and textareas */
+    input[type=text], input[type=email], textarea, #excursion {
+      width: 100%; /* Full width */
+      padding: 12px; /* Some padding */ 
+      border: 1px solid @sandy-beach; /* Gray border */
+      border-radius: 10px; /* Rounded borders */
+      box-sizing: border-box; /* Make sure that padding and width stays in place */
+      margin-top: 6px; /* Add a top margin */
+      margin-bottom: 16px; /* Bottom margin */
+      resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+    
+    /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+      border: none;
+      margin-bottom: 5%;
+      .btn-original(darken(@button-bg, 15%), @white, 4.4rem, 100%, 2rem);
+      &:hover {
+        background-color: @sandy-beach;
+        color: @button-bg;
+      }
+
+      @media @mobile {
+        background-color: @button-bg;
+        margin-bottom: 10%;
+      }
+    }
+  }

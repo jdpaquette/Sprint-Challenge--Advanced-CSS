@@ -87,20 +87,20 @@
       }
 
       .btn {
-        .btn-setup(@btn-bg-color, white, 3.5rem, 30%, 2rem);
-        margin-bottom: 5%;
-        &:hover {
-          background-color: white;
-          color: @btn-bg-color;
-        }
-        @media @phone {
-          .btn-setup(@btn-bg-color, white, 7.5rem, 80%, 2rem);
+           .btn-setup(@btn-bg-color, white, 3.5rem, 30%, 2rem);
+          margin-bottom: 5%;
           &:hover {
             background-color: white;
             color: @btn-bg-color;
           }
-          .layout(90%, auto auto 5% auto);
-        }
+          @media @phone {
+            .btn-setup(@btn-bg-color, white, 7.5rem, 80%, 2rem);
+            &:hover {
+              background-color: white;
+              color: @btn-bg-color;
+            }
+            .layout(90%, auto auto 5% auto);
+          }
       }
     }
 
